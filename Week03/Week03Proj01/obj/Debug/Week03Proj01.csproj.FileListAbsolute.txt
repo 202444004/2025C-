@@ -1,0 +1,10 @@
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\bin\Debug\Week03Proj01.exe.config
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\bin\Debug\Week03Proj01.exe
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\bin\Debug\Week03Proj01.pdb
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.FormWeek2.resources
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.Properties.Resources.resources
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.exe
+C:\Users\PC\Downloads\Week03\Week03\Week03Proj01\obj\Debug\Week03Proj01.pdb
