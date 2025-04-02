@@ -1,0 +1,10 @@
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\bin\Debug\Week04Homework.exe.config
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\bin\Debug\Week04Homework.exe
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\bin\Debug\Week04Homework.pdb
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.FormManager.resources
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.Properties.Resources.resources
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.exe
+C:\Users\PC\Downloads\Week04KimYeonwoo\Week04Homework\obj\Debug\Week04Homework.pdb
