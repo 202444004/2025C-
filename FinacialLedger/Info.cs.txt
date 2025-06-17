@@ -1,0 +1,16 @@
+namespace Proj_FinacialLedger_202444004
+{
+    class Info
+    {
+        public string Content { get; set; }
+        public int Money { get; set; }
+
+        public Info(string content, int money) {
+            this.Content = content;
+            this.Money = money;
+        }
+        public override string ToString() {
+            return $"{this.Content},{this.Money}";
+        }
+    }
+}

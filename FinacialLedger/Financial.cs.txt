@@ -1,0 +1,28 @@
+namespace Proj_FinacialLedger_202444004
+{
+    abstract class Financial
+    {
+        //protected Dictionary<DateTime, Info> _incomes;
+        protected Dictionary<DateTime, Info> _incomes = new Dictionary<DateTime, Info>();
+        protected Dictionary<DateTime, Info> _expenditures = new Dictionary<DateTime, Info>();
+
+        public int TotalIncome { get; }
+        public int TotalExpenditure { get; }
+        public virtual bool RegIncome(DateTime d, string content, int money) {
+            return true;
+        }
+        public virtual bool RegExpenditure(DateTime d, string content, int money)
+        {
+            return true;
+        }
+        public virtual bool RegIncome(string content, int money)
+        {
+            return true;
+        }
+        public virtual bool RegExpenditure(string content, int money)
+        {
+            return true;
+        }
+
+    }
+}

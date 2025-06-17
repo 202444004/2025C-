@@ -1,0 +1,70 @@
+namespace Proj_FinacialLedger_202444004
+{
+    class FinacialLedger : Financial
+    {
+        private int _year;
+        private int _targetAmount;
+
+        public int Year {
+            get { return _year; }
+        }
+        public int TargetAmount {
+            get { return _targetAmount; }
+        }
+        public bool IsBlack { get; }
+
+        public FinacialLedger(int year)
+        {
+            this._year = year;
+        }
+        public FinacialLedger(int year, int targetAmount)
+        {
+            this._year = year;
+            this._targetAmount = targetAmount;
+        }
+        public override bool RegIncome(DateTime d, string content, int money)
+        {
+            if (money >= 0)
+            {
+                Info info = new Info(content, money);
+                _incomes.Add(d, info);
+                return true;
+            }
+            return false;
+
+        }
+        public override bool RegExpenditure(DateTime d, string content, int money)
+        {
+            if (money >= 0)
+            {
+                Info info = new Info(content, money);
+                _expenditures.Add(d, info);
+                return true;
+            }
+            return false;
+        }
+        public override bool RegIncome(string content, int money)
+        {
+            base.RegIncome(content, money);
+            if (money >= 0)
+            {
+                Info info = new Info(content, money);
+                DateTime nowD = new DateTime();
+                _incomes.Add(nowD, info);
+                return true;
+            }
+            return false;
+        }
+        public override bool RegExpenditure(string content, int money)
+        {
+            if (money >= 0)
+            {
+                Info info = new Info(content, money);
+                DateTime nowD = new DateTime();
+                _expenditures.Add(nowD, info);
+                return true;
+            }
+            return false;
+        }
+    }
+}
