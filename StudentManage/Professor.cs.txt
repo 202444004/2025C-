@@ -1,0 +1,60 @@
+namespace Week09Homework
+{
+    class Professor : Member, IFile
+    {
+        //public string DepartmentCode { get; set; }
+
+        //private string _number;
+        //public string Number
+        //{
+        //    get { return _number; }
+        //}
+        //
+        //private string _name;
+        //public string Name
+        //{
+        //    get { return _name; }
+        //    set { _name = value; }
+        //}
+
+        public override string ToString()
+        {
+            return $"[{Number}]{Name}";
+        }
+
+        public Professor(string number, string name, Department dept)
+            : base(number, name, dept)
+        {
+            //_number = number;
+            //_name = name;
+            //DepartmentCode = deptcode;
+        }
+
+        public string Record
+        {
+            get { return $"{Number}|{Name}|{Dept.Code}"; }
+        }
+        public static Professor Restore(string record, Department[] departments)
+        {
+            Professor prof = null;
+            //참고
+            try
+            {
+                var sdatas = record.Trim().Split(new char[] { '|' });
+                var dept = departments.FirstOrDefault(m => m != null && m.Code == sdatas[2]);
+                prof = new Professor(sdatas[0], sdatas[1], dept);
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                MessageBox.Show("파일 포맷이 잘못되었음");
+                Console.WriteLine(ex);
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            return prof;
+        }
+    }
+}
