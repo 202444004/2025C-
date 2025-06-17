@@ -1,6 +1,5 @@
 namespace Proj_FinacialLedger_202444004
 {
-    //
     public partial class FormManager: Form 
     {
         FinacialLedger finacialLedger;
@@ -180,11 +179,9 @@ namespace Proj_FinacialLedger_202444004
             f.RegIncome(d, tbxIncomeDetail.Text, amount);
 
             //Info info = new Info(tbxIncomeDetail.Text.Trim(), amount);
-            //string IncomeDate = tbxIncomeYear.Text + tbxIncomeMonth.Text + tbxIncomeDay.Text; 
-            //DateTime t = DateTime.ParseExact(IncomeDate, "yyyyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.None);
+            
             string income = d.ToString("yyyyMMdd HHmmss") + "," + tbxIncomeDetail.Text + "," + amount.ToString(); //info.ToString();
-            //lbIncome.Items.Add(info);
-            //lbAll.Items.Add(info);
+            
             lbIncome.Items.Add("수입," + income);
             lbAll.Items.Add("수입,"+income);
             calcTotal();
@@ -344,11 +341,5 @@ namespace Proj_FinacialLedger_202444004
             lbAll.Items.Add("지출," + expenditure);
             calcTotal();
         }
-
-        private void lblTotalIncome_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
